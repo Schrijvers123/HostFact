@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>plg_system_hostfact</name>
+	<author>SCHRIJVERS123.NL</author>
+	<creationDate>Augustus 2018</creationDate>
+	<copyright>Copyright (C) 2005 - 2018 SCHRIJVERS123.NL. All rights reserved.</copyright>
+	<license>GNU GPL v3 or later</license>
+	<authorEmail>support@schrijvers123.nl</authorEmail>
+	<authorUrl>www.schrijvers123.nl</authorUrl>
+	<version>1.0.1</version>
+	<description>PLG_HOSTFACT_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="hostfact">hostfact.php</filename>
+		<filename>index.html</filename>
+		<filename>hostfact.xml</filename>
+	</files>
+	
+	<media destination="plg_system_hostfact">
+		<folder>js</folder>
+	</media>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_hostfact.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_hostfact.sys.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.plg_system_hostfact.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.plg_system_hostfact.sys.ini</language>
+	</languages>
+	
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				
+				<field
+					name="orderform_url"
+					type="url"
+					label="PLG_HOSTFACT_FIELD_ORDERFORM_URL_LABEL"
+					description="PLG_HOSTFACT_FIELD_ORDERFORM_URL_DESC"
+					size="60"
+					default=""
+					required="true"
+				/>
+								
+			</fieldset>
+		</fields>
+	</config>
+	
+	<updateservers>
+        <server type="extension" priority="1" name="HostFact for Joomla!"><![CDATA[https://www.schrijvers123.nl/index.php?option=com_ars&view=update&task=stream&format=xml&id=7&dummy=extension.xml]]></server>
+    </updateservers>
+	
+
+</extension>
