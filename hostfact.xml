@@ -7,7 +7,7 @@
 	<license>GNU GPL v3 or later</license>
 	<authorEmail>support@schrijvers123.nl</authorEmail>
 	<authorUrl>www.schrijvers123.nl</authorUrl>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<description>PLG_HOSTFACT_XML_DESCRIPTION</description>
 	<files>
 		<filename plugin="hostfact">hostfact.php</filename>
