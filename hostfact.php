@@ -20,8 +20,7 @@ class PlgSystemHostfact extends JPlugin
 {
 	public function onBeforeCompileHead()
 	{
-		$app =jFactory::getApplication();
-		if ($app->isSite() == false) {
+		if(JFactory::getApplication()->isClient('administrator')) {
 			return;
 		}
 		$document = jFactory::getDocument();
@@ -32,9 +31,9 @@ class PlgSystemHostfact extends JPlugin
 	}
 	public function onAfterRender()
 	{
-		$app =jFactory::getApplication();
+		$app = jFactory::getApplication();
 		
-		if ($app->isSite() == false)
+		if (JFactory::getApplication()->isClient('administrator'))
 		{
 			return;
 		}
@@ -53,7 +52,7 @@ class PlgSystemHostfact extends JPlugin
 				$text = preg_replace($pattern, '', $text);
 				return true;
 			}
-
+			
 			// Disable caching
 			$cache = JFactory::getCache('com_content');
 			$cache->setCaching(false);
