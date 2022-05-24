@@ -1,5 +1,5 @@
 # HostFact
-A Joomla 3.x Plugin that will show the HostFact orderform.
+A Joomla 4.x Plugin that will show the HostFact orderform.
 
 # Usage
 Place a HostFact OrderForm in an article.
